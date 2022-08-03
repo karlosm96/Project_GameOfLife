@@ -15,7 +15,7 @@ BLACK = (30, 30, 30)
 FPS = (30)
 
 ## Cells specifications
-NxC, NyC = 120, 120
+NxC, NyC = 100, 100
 
 dim_NxC = WIDTH / NxC
 dim_NyC = HEIGHT / NyC 
@@ -70,15 +70,42 @@ def main():
     current_time = 0
     initial_time = 0
 
+    ## oscillating cell
     cell_state[5, 3] = 1
     cell_state[5, 4] = 1
     cell_state[5, 5] = 1
 
+    cell_state[70,8]=1
+    cell_state[70,9]=1
+    cell_state[70,10]=1
+
+    ## moving cell
     cell_state[21, 21] = 1
     cell_state[22, 22] = 1
     cell_state[22, 23] = 1
     cell_state[21, 23] = 1
     cell_state[20, 23] = 1
+
+    cell_state[81, 81] = 1
+    cell_state[82, 82] = 1
+    cell_state[82, 83] = 1
+    cell_state[81, 83] = 1
+    cell_state[80, 83] = 1
+
+    ## block cell
+    cell_state[10, 90]=1
+    cell_state[10,91]=1
+    cell_state[11,90]=1
+    cell_state[11,91]=1
+
+    ## oval cell
+    cell_state[90, 5]=1
+    cell_state[90,6]=1
+    cell_state[90,7]=1
+    cell_state[91,5]=1
+    cell_state[91,6]=1
+    cell_state[91,7]=1
+
     
     clock = pygame.time.Clock()
     
@@ -110,10 +137,6 @@ def main():
                 cel_x, cel_y = int(np.floor(pos_x/ dim_NxC)), int(np.floor(pos_y/ dim_NyC))
                 new_cell_state[cel_x, cel_y] = 1
                 print(pos_x, pos_y) ##_---------------------problems
-
-            
-            
-            
 
                 
         current_time = pygame.time.get_ticks()
