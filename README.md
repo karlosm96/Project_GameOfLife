@@ -19,9 +19,8 @@ Any live cell with more than three live neighbors dies, as if by overpopulation.
 Any dead cell with exactly three live neighbors becomes a live cell, as if by reproduction.
 
 ## Controls
-Click: Toggle cell alive/dead state.
-
-Any Key: Pause/Resume simulation.
+-Click: Toggle cell alive/dead state.
+-Any Key: Pause/Resume simulation.
 
 ## Features
 The game grid consists of a specified number of rows and columns.
