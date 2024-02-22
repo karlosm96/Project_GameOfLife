@@ -5,6 +5,7 @@ It is a zero-player game, meaning that its evolution is determined by its initia
 ## Installation and Setup
 1. Ensure you have Python installed on your system. You can download it from [python.org](https://www.python.org/downloads/).
 2. Install Pygame by running `pip install pygame` in your terminal or command prompt.
+3. Install Numpy by running `pip install numpy` in your terminal or command prompt.
 
 ## How to Play
 - Upon running the script, the game window will appear, displaying the grid of cells.
