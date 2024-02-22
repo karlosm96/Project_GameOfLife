@@ -20,6 +20,7 @@ Any dead cell with exactly three live neighbors becomes a live cell, as if by re
 
 ## Controls
 Click: Toggle cell alive/dead state.
+
 Any Key: Pause/Resume simulation.
 
 ## Features
